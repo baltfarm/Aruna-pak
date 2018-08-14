@@ -1,9 +1,8 @@
 <?
-if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
-	die();
-
-$arTemplate = Array(
-	'NAME' => 'aruna',
-	'DESCRIPTION' => 'Сайт компании Аруна'
+$arTemplate = array (
+  'NAME' => 'aruna',
+  'DESCRIPTION' => 'Сайт компании Аруна',
+  'SORT' => '',
+  'TYPE' => '',
 );
 ?>
