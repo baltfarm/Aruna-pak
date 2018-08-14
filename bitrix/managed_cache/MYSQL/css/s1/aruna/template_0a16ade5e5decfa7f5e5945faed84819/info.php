@@ -1,0 +1,1 @@
+<? $filesInfo = array( 'FILES' => array("/bitrix/templates/aruna/styles.css" => "153417200820",)); ?>
