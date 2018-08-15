@@ -1,13 +1,6 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"О компании", 
-		"/kompaniya/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Производство", 
 		"/proizvodstvo/", 
 		Array(), 
@@ -19,6 +12,34 @@ $aMenuLinks = Array(
 		"/polimernaya-upakovka/", 
 		Array(), 
 		Array("LEFT_MENU"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Продукция", 
+		"/plastikovaya-upakovka/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Услуги", 
+		"/uslugi/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/kontakty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Заявка", 
+		"/zayavka/", 
+		Array(), 
+		Array(), 
 		"" 
 	)
 );
