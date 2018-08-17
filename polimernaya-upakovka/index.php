@@ -2,14 +2,14 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Title");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:catalog",
-	"katalog-upakovki",
-	Array(
+	"bitrix:catalog", 
+	"katalog-upakovki", 
+	array(
 		"ACTION_VARIABLE" => "action",
-		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
-		"ADD_SECTIONS_CHAIN" => "Y",
+		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"AJAX_OPTION_HISTORY" => "N",
@@ -26,16 +26,22 @@ $APPLICATION->SetTitle("Title");
 		"DETAIL_BRAND_USE" => "N",
 		"DETAIL_BROWSER_TITLE" => "-",
 		"DETAIL_CHECK_SECTION_ID_VARIABLE" => "N",
-		"DETAIL_DETAIL_PICTURE_MODE" => array("POPUP"),
+		"DETAIL_DETAIL_PICTURE_MODE" => array(
+			0 => "POPUP",
+		),
 		"DETAIL_DISPLAY_NAME" => "Y",
-		"DETAIL_DISPLAY_PREVIEW_TEXT_MODE" => "E",
+		"DETAIL_DISPLAY_PREVIEW_TEXT_MODE" => "H",
 		"DETAIL_IMAGE_RESOLUTION" => "1by1",
-		"DETAIL_MAIN_BLOCK_PROPERTY_CODE" => array(),
+		"DETAIL_MAIN_BLOCK_PROPERTY_CODE" => array(
+		),
 		"DETAIL_META_DESCRIPTION" => "-",
 		"DETAIL_META_KEYWORDS" => "-",
 		"DETAIL_PRODUCT_INFO_BLOCK_ORDER" => "sku,props",
 		"DETAIL_PRODUCT_PAY_BLOCK_ORDER" => "rating,price,priceRanges,quantityLimit,quantity,buttons",
-		"DETAIL_PROPERTY_CODE" => array("",""),
+		"DETAIL_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DETAIL_SHOW_POPULAR" => "N",
 		"DETAIL_SHOW_SLIDER" => "N",
@@ -56,7 +62,8 @@ $APPLICATION->SetTitle("Title");
 		"IBLOCK_TYPE" => "packaging",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"INSTANT_RELOAD" => "N",
-		"LABEL_PROP" => array(),
+		"LABEL_PROP" => array(
+		),
 		"LAZY_LOAD" => "N",
 		"LINE_ELEMENT_COUNT" => "3",
 		"LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
@@ -68,9 +75,13 @@ $APPLICATION->SetTitle("Title");
 		"LIST_META_DESCRIPTION" => "-",
 		"LIST_META_KEYWORDS" => "-",
 		"LIST_PRODUCT_BLOCKS_ORDER" => "props,price,sku,quantityLimit,quantity,buttons",
-		"LIST_PRODUCT_ROW_VARIANTS" => array("={{'VARIANT':'2'}","BIG_DATA':false","={{'VARIANT':'2'}","BIG_DATA':false","={{'VARIANT':'2'}","BIG_DATA':false","={{'VARIANT':'2'}","BIG_DATA':false"),
-		"LIST_PROPERTY_CODE" => array("",""),
-		"LIST_PROPERTY_CODE_MOBILE" => array(),
+		"LIST_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
+		"LIST_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"LIST_PROPERTY_CODE_MOBILE" => array(
+		),
 		"LIST_SHOW_SLIDER" => "Y",
 		"LIST_SLIDER_INTERVAL" => "3000",
 		"LIST_SLIDER_PROGRESS" => "N",
@@ -81,7 +92,7 @@ $APPLICATION->SetTitle("Title");
 		"MESS_BTN_COMPARE" => "Сравнение",
 		"MESS_BTN_DETAIL" => "Подробнее",
 		"MESS_BTN_SUBSCRIBE" => "Подписаться",
-		"MESS_NOT_AVAILABLE" => "Нет в наличии",
+		"MESS_NOT_AVAILABLE" => "",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -89,13 +100,15 @@ $APPLICATION->SetTitle("Title");
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "Товары",
-		"PAGE_ELEMENT_COUNT" => "12",
+		"PAGE_ELEMENT_COUNT" => "9",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRICE_CODE" => array(),
+		"PRICE_CODE" => array(
+		),
 		"PRICE_VAT_INCLUDE" => "N",
 		"PRICE_VAT_SHOW_VALUE" => "N",
 		"PRODUCT_ID_VARIABLE" => "id",
-		"PRODUCT_PROPERTIES" => array(),
+		"PRODUCT_PROPERTIES" => array(
+		),
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 		"SEARCH_CHECK_DATES" => "Y",
@@ -110,12 +123,11 @@ $APPLICATION->SetTitle("Title");
 		"SECTION_COUNT_ELEMENTS" => "N",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_TOP_DEPTH" => "1",
-		"SEF_FOLDER" => "/vidy-polimernoy-upakovki/",
+		"SEF_FOLDER" => "/polimernaya-upakovka/",
 		"SEF_MODE" => "Y",
-		"SEF_URL_TEMPLATES" => Array("compare"=>"compare.php?action=#ACTION_CODE#","element"=>"#SECTION_ID#/#ELEMENT_ID#.html","section"=>"#SECTION_ID#/","sections"=>"","smart_filter"=>"#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/"),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
-		"SET_TITLE" => "Y",
+		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
 		"SHOW_DEACTIVATED" => "N",
 		"SHOW_PRICE_COUNT" => "",
@@ -132,8 +144,11 @@ $APPLICATION->SetTitle("Title");
 		"TOP_ENLARGE_PRODUCT" => "STRICT",
 		"TOP_LINE_ELEMENT_COUNT" => "3",
 		"TOP_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
-		"TOP_PRODUCT_ROW_VARIANTS" => array("={{'VARIANT':'2'}","BIG_DATA':false","={{'VARIANT':'2'}","BIG_DATA':false","={{'VARIANT':'2'}","BIG_DATA':false"),
-		"TOP_PROPERTY_CODE" => array(0=>"",1=>"",),
+		"TOP_PRODUCT_ROW_VARIANTS" => "",
+		"TOP_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"TOP_PROPERTY_CODE_MOBILE" => "",
 		"TOP_SHOW_SLIDER" => "Y",
 		"TOP_SLIDER_INTERVAL" => "3000",
@@ -151,6 +166,19 @@ $APPLICATION->SetTitle("Title");
 		"USE_PRICE_COUNT" => "N",
 		"USE_PRODUCT_QUANTITY" => "N",
 		"USE_STORE" => "N",
-		"VARIABLE_ALIASES" => array("compare"=>array("ACTION_CODE"=>"action",),)
-	)
+		"COMPONENT_TEMPLATE" => "katalog-upakovki",
+		"SEF_URL_TEMPLATES" => array(
+			"sections" => "",
+			"section" => "#SECTION_ID#/",
+			"element" => "#SECTION_ID#/#ELEMENT_ID#.html",
+			"compare" => "compare.php?action=#ACTION_CODE#",
+			"smart_filter" => "#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/",
+		),
+		"VARIABLE_ALIASES" => array(
+			"compare" => array(
+				"ACTION_CODE" => "action",
+			),
+		)
+	),
+	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

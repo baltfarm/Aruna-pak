@@ -84,24 +84,24 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 						<div id="top-menu">
         					<div id="top-menu-inner">
 								<?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"top_menu_aruna", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "top2level",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "2",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "N",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "Y",
-		"COMPONENT_TEMPLATE" => "top_menu_aruna"
-	),
-	false
-);?>
+									"bitrix:menu", 
+									"top_menu_aruna", 
+									array(
+										"ALLOW_MULTI_SELECT" => "N",
+										"CHILD_MENU_TYPE" => "top2level",
+										"DELAY" => "N",
+										"MAX_LEVEL" => "2",
+										"MENU_CACHE_GET_VARS" => array(
+										),
+										"MENU_CACHE_TIME" => "3600",
+										"MENU_CACHE_TYPE" => "N",
+										"MENU_CACHE_USE_GROUPS" => "Y",
+										"ROOT_MENU_TYPE" => "top",
+										"USE_EXT" => "Y",
+										"COMPONENT_TEMPLATE" => "top_menu_aruna"
+									),
+									false
+								);?>
 					        </div>
 						</div>
 					</nav>
@@ -217,32 +217,32 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
   ============================-->
   	<div class="container">
   		<div class="row">
-  			<?if ($LEFT_MENU == "Y"):?>
+  			<?if ($LEFT_MENU != "N"):?>
 				<div class="col-md-3 d-none d-md-block">
  			 		<section id="menu_left" class="wow fadeInUp">
 						<?$APPLICATION->IncludeComponent(
-							"bitrix:menu", 
-							"left_menu_aruna", 
-							array(
-								"ROOT_MENU_TYPE" => "top2level",
-								"MENU_CACHE_TYPE" => "A",
-								"MENU_CACHE_TIME" => "36000000",
-								"MENU_CACHE_USE_GROUPS" => "Y",
-								"MENU_CACHE_GET_VARS" => array(
-								),
-								"MAX_LEVEL" => "1",
-								"CHILD_MENU_TYPE" => "top2level",
-								"USE_EXT" => "Y",
-								"ALLOW_MULTI_SELECT" => "N",
-								"COMPONENT_TEMPLATE" => "left_menu_aruna",
-								"DELAY" => "N",
-								"MENU_THEME" => "site"
-							),
-							false,
-							array(
-								"ACTIVE_COMPONENT" => "Y"
-							)
-						);?>
+	"bitrix:menu", 
+	"left_menu_aruna", 
+	array(
+		"ROOT_MENU_TYPE" => "top2level",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_TIME" => "36000000",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MAX_LEVEL" => "1",
+		"CHILD_MENU_TYPE" => "left",
+		"USE_EXT" => "Y",
+		"ALLOW_MULTI_SELECT" => "N",
+		"COMPONENT_TEMPLATE" => "left_menu_aruna",
+		"DELAY" => "N",
+		"MENU_THEME" => "site"
+	),
+	false,
+	array(
+		"ACTIVE_COMPONENT" => "Y"
+	)
+);?>
 					</section>
 				</div>
 				<div class="col-md-9 content">

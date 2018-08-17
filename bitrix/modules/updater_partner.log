@@ -63,3 +63,15 @@
 2018-08-15 16:50:57 -  - exec CUpdateClientPartner::__CollectRequestData
 2018-08-15 16:50:57 -  - exec CUpdateClientPartner::GetHTTPPage
 2018-08-15 16:50:57 -  - exec CUpdateClientPartner::ParseServerData
+2018-08-16 16:51:06 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-08-16 16:51:06 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-08-16 16:51:07 -  - exec CUpdateClientPartner::ParseServerData
+2018-08-16 16:51:07 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-08-16 16:51:07 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-08-16 16:51:07 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=aruna-packaging&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=7.0.26&NGINX=Y&dbv=5.7.20&instm=main%2C18.0.4%2CY%3Bb24connector%2C18.0.0%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bclouds%2C18.0.0%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Bhighloadblock%2C17.5.1%2CN%3Biblock%2C17.6.8%2CN%3Blanding%2C18.4.21%2CN%3Bmessageservice%2C18.0.0%2CN%3Bnsandrey.emptyinstall%2C1.0.5%2CN%3Bperfmon%2C17.0.1%2CN%3Brest%2C18.0.4%2CN%3Bsearch%2C17.6.0%2CN%3Bseo%2C18.1.0%2CN%3Bsocialservices%2C18.0.0%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN&reqm=bitrix.sitecorporate%2Cnsandrey.emptyinstall&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-08-16 16:51:07 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-08-16 16:51:07 -  - TIME GetUpdatesList(request) 0.327 sec
+2018-08-16 16:51:07 -  - exec CUpdateClientPartner::ParseServerData
+2018-08-16 16:51:07 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-08-16 16:51:07 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-08-16 16:51:08 -  - exec CUpdateClientPartner::ParseServerData

@@ -2,7 +2,7 @@
 $arUrlRewrite=array (
   1 => 
   array (
-    'CONDITION' => '#^/vidy-polimernoy-upakovki/#',
+    'CONDITION' => '#^/polimernaya-upakovka/#',
     'RULE' => '',
     'ID' => 'bitrix:catalog',
     'PATH' => '/polimernaya-upakovka/index.php',
